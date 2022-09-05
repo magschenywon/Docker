@@ -1,0 +1,13 @@
+FROM mongo:latest
+
+ENV AUTH yes
+ENV STORAGE_ENGINE wiredTiger
+ENV JOURNALING yes
+COPY ./data.json /usr/local/bin
+COPY ./data1.json /usr/local/bin
+COPY ./data2.json /usr/local/bin
+
+COPY ./gen.sh /usr/local/bin
+
+EXPOSE 27017 28017
+CMD ["mongod"]
