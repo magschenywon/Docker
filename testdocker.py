@@ -1,4 +1,3 @@
-# Theo Dimov
 # Docker Monitoring Code 
 # Imported libraries
 from socket import *
