@@ -1,0 +1,7 @@
+FROM nginx
+#RUN apt-get update && apt-get install curl vim telnet -y
+COPY default.conf /etc/nginx/conf.d/
+COPY index.html /usr/share/nginx/html/
+COPY ./gen.sh /
+RUN chmod +x /gen.sh \
+    ./gen.sh
