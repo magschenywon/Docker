@@ -1,0 +1,7 @@
+version: '3'
+services:
+  tomcat:
+    build: .
+    container_name: tomcat_mags
+    ports:
+      - "8080:8080"
