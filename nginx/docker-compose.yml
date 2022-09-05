@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    build: .
+    image: mags/nginx
+    container_name: nginx_mags
+    ports:
+      - "80:80"
