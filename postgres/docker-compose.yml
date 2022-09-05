@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pg:
+    restart: always
+    container_name: mypg 
+    build:
+      dockerfile: Dockerfile
+      context: ./postgres
+
