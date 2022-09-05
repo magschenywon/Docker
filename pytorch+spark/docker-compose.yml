@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pytorch:
+    build:
+      dockerfile: Dockerfile
+      context: ./pytorch
+  spark:
+    build:
+      dockerfile: Dockerfile
+      context: ./spark
+    ports:
+      - '8080:8080'
